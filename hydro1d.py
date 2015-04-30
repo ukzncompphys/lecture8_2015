@@ -91,7 +91,7 @@ class Fluid:
         self.gradrhoE=drhoE
     def get_timestep(self,dt=0.1):
         #tutorial problem 3 - what should this timestep actually be from CFL?
-        return 0.05*dt  #*self.dx
+        return 0.5*dt  #*self.dx
     def take_step(self):
         #before we can do anything else, get the boundary gonditions
         self.get_bc()
@@ -127,7 +127,7 @@ if __name__=='__main__':
     fluid.take_step()
 
 
-    for i in range(0,10000):
+    for i in range(0,1000):
         fluid.take_step()
         plt.clf()
         plt.plot(fluid.rho)
