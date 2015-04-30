@@ -6,6 +6,7 @@ understand what it's doing!  Still waiting for official OK from
 university on dates.  Assuming that's OK, a draft is due on May 26th,
 with the final version due on the 20th of June.
 
+2015 note - these dates will be updated, but should be approximately OK.
 
 nbody:  make a 2-D nbody code that calculates the forces by computing
 the potential, where the potential is found by convolving the density
@@ -16,7 +17,10 @@ Third, set up both periodic and non-periodic boundary conditions.  Set
 up a problem where hundreds of thousands of particles are initially
 scattered randomly throughout the domain.  Show the evolution with
 time for both periodic and non-periodic boundary conditions.  Track
-the total energy - how well is it conserved?
+the total energy - how well is it conserved?  NOTE - you *must* use
+FFTs on a grid to get full marks for this project.  If you instead
+just do what we did in class and calculate the pair-wise forces on
+particles, you will do very poorly.
 
 
 hydro:  make a 2-D 2nd order accurate dimenstionally split hydro code.
